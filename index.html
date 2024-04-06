@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href = "styles/main.css" rel = "stylesheet" type = "text/css">
+		
+	</head>
+	
+	<body>
+		<nav>
+			<!--https://www.w3schools.com/tags/tag_nav.asp!-->
+            <ul>
+				<!-- Originally, I used the strong tag to try to differentiate the words from the logo in css, but that made the text look horrifying so in the end editing the logo directly in the tag was easier!-->
+                <!-- Now that the strong tag is there, I think the magenta in white looks better than the white in magenta in the nav bar.!-->
+				<a href="page2.html"><strong>General</strong></a>
+                <a href="page3.html"><strong>Characters</strong></a>
+				<a href="index.html" style = "margin-top: -25%; padding-top: 90px; padding-bottom: 0px; padding-right: 15px;"><img src = "styles/images/logo.png" id = "logo"></a>
+                <a href="page4.html"><strong>Rate Us</strong></a>
+				<!-- was struggling to center these without making the last one wrap then I realised that it was because the last one still had a big margin right!-->
+				<a href="page5.html" style = "margin-right: 0px;"><strong>Questions</strong></a>
+				<!--<a href="index.html" style = "margin-top: -25%; padding-top: 90px; padding-bottom: 0px; padding-right: 15px;"><img src = "styles/images/logo.png" id = "logo"></a>!-->
+            </ul>
+        </nav>
+		
+		<!--Any images that do not have credits above come / are edited from the Omega Strikers Media Asset Pack on odysseyinteractive.gg except the sky background, it's from theskyandthesea.com, it literally says it on the image and I didn't notice it before. I cropped it so the watermark isn't fully visible!-->
+		<!--<div id = "bar">
+			<a href="index.html"><img src = "styles/images/logo.png" id = "logo"></a>
+		</div>!-->
+			<!-- No, look for the orginal note image!-->
+			<!--Made by me!-->
+			<img src = "styles/images/note.png" id = "note">
+			
+			<a href="page2.html"><img src = "styles/images/general.png" id = "button1"></a>
+			<a href="page3.html"><img src = "styles/images/characters.png" id = "button2"></a>
+			<!--<a href="page4.html"><img src = "styles/images/rate_us.png" id = "button7"></a>!-->
+			
+			
+		<!--
+			<a href="page2.html">General</a>
+			<a href="page3.html">Characters</a>
+			<a href="page4.html">Rate Us</a>
+		!-->				
+		<!-- <nav>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav> !-->
+		
+		<div class = "container">
+			<!--<iframe width="560" height="315" src="https://www.youtube.com/watch?v=i1kEGXtaJsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>!-->
+			<!-- Stopped flexing. Looking for a fix !-->
+			<!-- Fixed it but I'm not sure how, looking for how I fixed it !-->
+			<h1>What is Omega Strikers?</h1>
+			<div class="flex">
+				<iframe width="560" height="315" style = "margin-top: 1.5%; margin-left: 1.5%;"src="https://www.youtube.com/embed/i1kEGXtaJsc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p style = "width: 40%; margin-left: 1.5%;">
+					Omega Strikers is a free-to-play
+					MOBA, that resembles a 
+					game of 3 v 3 pong or air hockey with a variety 
+					of characters with different 
+					abilities. The game is currently 
+					open beta on Steam. You can 
+					check out the trailer and the 
+					Steam page from here.	
+					<a href="https://store.steampowered.com/app/1869590/Omega_Strikers/" target="_blank" id = "beta">Open Beta</a>
+				</p>
+			</div>
+			<!-- The game is actually in open beta, not closed beta like it used to say in the button. Missed that last time. !-->
+			<!--The button's hitbox was whack!-->
+			
+		</div>
+	</body>
+</html>

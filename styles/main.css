@@ -1,0 +1,238 @@
+/* I encountered some problem with the flex, it wasn't working. I couldn't found out what was wrong, I just downloaded and changed the CA1 css file and now it's working again.*/
+
+body {
+	background-image: url("images/bg.png");
+	background-size: 100% 150%;
+	margin: 0px;
+}
+
+#bar, .container {
+    background-color: rgb(231, 156, 19);
+    opacity: 0.9;
+}
+
+#bar {
+	/*top: 0px;
+	padding-top: 0px;
+	position: relative;
+	margin: 0px;*/
+	/*margin-top: -1.2%;*/
+}
+
+ul {
+	/*padding: 25px;*/
+	margin-top: -1px;
+	background-color: rgb(231, 156, 19);
+	opacity: 0.9;
+	/*margin: auto;*/
+}
+
+ul a {
+	margin-left: 0;
+	margin-right: 8.3%;
+	/*padding-right: 50px;*/
+	padding-right: 0.9%;
+	padding-left: 0.88%;
+	/*tried to optimise for different screen resolutions, converted the pixels to percentage with maths*/
+	padding-top: 38px;
+	padding-bottom: 39px;
+    list-style: none;
+    display: inline;
+	text-decoration: none;
+	color: white;
+	font-family: arial;
+	font-size: 29px;
+	vertical-align: middle;
+	background-color: rgb(231, 156, 19);
+	/*outline: 5px solid rgb(209, 30, 104);*/
+	/*outline-color: rgb(209, 30, 104);*/
+	opacity: 0.9;
+}
+
+/* have to separate the buttons to centre them */
+
+#button1, #button2 {
+	margin-top: 6%;
+	display: inline-block;
+	margin-bottom: 6%;
+	width: 15%;
+}
+
+#button1 {
+	margin-left: 25%;
+	margin-right: 9%;
+}
+
+#button2 {
+	/* Thanks w3schools*/
+	margin-left: 10%;
+	margin-right: 10%;
+	/*background-color: rgba(211, 18, 112, 0.75);*/
+}
+
+#button3 {
+	/*background-color: rgba(211, 18, 112, 0.75);*/
+	display: inline-block;
+	width: 165px;
+	height: 165px;
+	/*margin-top: 0%;*/
+	margin-left: auto;
+	margin-right: auto;
+	/*filter: drop-shadow(2px 1px 0 black);*/
+	/*background-color: rgba(211, 18, 112, 0.75);*/
+	outline: solid white 4px;
+	/*outline-color: white;
+	outline-width: 4px;*/
+	opacity: 0.9;
+}
+
+#aimi {
+	margin-top: 10%;
+}
+
+/*#beta {
+	background-color: rgb(209, 30, 104);
+	color: white;
+	font-size: 28px;
+	font-family: arial;
+	text-decoration: none;
+	margin: 140px;
+	padding: 15px 15px;
+	float: right; 
+	margin-top: -50px;
+}*/
+
+#beta {
+	background-color: rgb(209, 30, 104);
+	color: white;
+	font-size: 28px;
+	font-family: arial;
+	text-decoration: none;
+	margin-right: 30%;
+	padding: 15px 15px;
+	float: right; 
+	margin-top: 10px;
+}
+
+a:hover {
+	filter: brightness(115%);
+	cursor: pointer;
+} 
+
+.arrow {
+	/*display: block;*/
+	color: rgb(209, 30, 104);
+	font-size: 100px;
+	font-family: arial;
+	text-decoration: none;
+	margin-left: 5%;
+}
+
+#logo {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5%;
+	width: 15%;
+}
+/*https://stackoverflow.com/questions/15782078/bring-element-to-front-using-css*/
+#note {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: 55%;
+	margin-top: -4%;
+	z-index: 1;
+	position: relative;
+	width: 10%;
+}
+
+.container {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	padding: 1%;
+}
+
+.flex {
+	display: flex;
+    flex-direction: row;
+	margin-top: -2.5%;
+}
+
+h1, h2, h3, p, label, ul a, figcaption {
+	color: white;
+	font-family: arial;
+	/*w3schools text shadow for plain border*/
+	text-shadow: -2.5px 0 rgb(209, 30, 104), 0 2.5px rgb(209, 30, 104), 2.5px 0 rgb(209, 30, 104), 0 -2.5px rgb(209, 30, 104);
+}
+
+
+strong {
+	color:  rgb(209, 30, 104);
+	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+p, figcaption, label {
+	text-shadow: -1.5px 0 rgb(209, 30, 104), 0 1.5px rgb(209, 30, 104), 1.5px 0 rgb(209, 30, 104), 0 -1.5px rgb(209, 30, 104);
+}
+
+p, label{
+	margin: 8px;
+	font-size: 28px;
+	font-family: arial;
+}
+
+figcaption {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 58px;
+	text-align: center;
+	margin-top: 2.5%;
+}
+
+h2 {
+	font-size: 58px;
+}
+
+h3, strong {
+	font-size: 29px;
+}
+
+
+/*w3schools height auto*/
+.test {
+	/*margin-top: auto;*/
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+
+.gif, .profile {
+	/*width: 164.09495549%;*/
+	width: 400px;
+	height: 400px;
+}
+
+.profile, .rate {
+	margin: 8px;
+	background-color: rgb(209, 30, 104);
+	outline: solid white 4px;
+	opacity: 0.9;
+}
+
+figcaption {
+	text-align: center;
+}
+/*ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    padding: 0 30px;
+    display: block;
+   
+
+}*/

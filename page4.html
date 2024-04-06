@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link href = "styles/main.css" rel = "stylesheet" type = "text/css">
+		
+		<script>
+			let rating = 0;
+			let count = 0;
+			let percent;
+			/*When thumbs up is pressed, this function is called. The variable rating goes up and result() is called.*/
+			function ratingUp() {
+				rating++;
+				result();
+			}
+			// I realised that a rating down function is unnecessary after testing the program.
+			/*function ratingDown() {
+				result();
+			}*/
+			/*When thumbs down is pressed or ratingUp() is called, result() is called. The variable count goes up. The */
+			function result() {
+				count++;
+				/*https://pawelgrzybek.com/rounding-and-truncating-numbers-in-javascript/*/
+				/*rating/count * 100 gives the percentage of positive ratings because count is the total of ratings and rating is the number of positive ratings. Math.round rounds the value up so it's a whole number.*/
+				percent = Math.round(rating/count * 100);
+				/*This changes the h3 ratings to say 'whatever% positive ratings | whatever ratings'*/
+				document.getElementById("ratings").innerHTML = percent + "% positive ratings | " + count + " ratings";
+			}
+		</script>
+	</head>
+	
+	<body>
+		<nav>
+			<!--https://www.w3schools.com/tags/tag_nav.asp!-->
+            <ul>
+                <a href="page2.html"><strong>General</strong></a>
+                <a href="page3.html"><strong>Characters</strong></a>
+				<a href="index.html" style = "margin-top: -25%; padding-top: 90px; padding-bottom: 0px; padding-right: 15px;"><img src = "styles/images/logo.png" id = "logo"></a>
+                <a href="page4.html"><strong>Rate Us</strong></a>
+				<!-- was struggling to center these without making the last one wrap then I realised that it was because the last one still had a big margin right!-->
+				<a href="page5.html" style = "margin-right: 0px;"><strong>Questions</strong></a>
+				<!--<a href="index.html" style = "margin-top: -25%; padding-top: 90px; padding-bottom: 0px; padding-right: 15px;"><img src = "styles/images/logo.png" id = "logo"></a>!-->
+            </ul>
+        </nav>
+		
+		<!--Made by me!-->
+		<img src = "styles/images/note.png" id = "note">
+		
+		<a href="index.html" class = "arrow">&#11148;</a>
+		
+		<h1>Rate Our Website</h1>
+		
+		<div class = "container">
+			<h2>How did we do? Be honest!</h2>
+				
+			<!--This took a lot of experimentation!-->
+			<!-- Using a tags for buttons in the flex seem to mess with the hitboxes, so I've messed around with button tags instead!-->
+			<!--I changed the image size manually using simpleimageresizer.com because of the hitboxes staying the same after trying to shrink the image, works with a tags.-->
+			<!--I am no longer using images!-->
+			<!--<a onclick = "ratingUp()"><img src = "styles/images/up.png" class = "rate" style = "margin-left: 8%;"></a>
+			<a onclick = "result()"><img src = "styles/images/down.png" class = "rate" style = "margin-left: 21%;"></a>!-->
+			
+			<!--the inline css makes the thumbs up bigger and centers the buttons!-->
+			<a onclick = "ratingUp()" class = "rate" style = "font-size: 200px; margin-left: 25%;">👍</a>
+			<a onclick = "result()" class = "rate" style = "font-size: 200px">👎</a>
+			
+			<br><br><br>
+			<!-- for some reason it's not taking the properties from flex !-->
+			<!-- removed flex because having everything centered with this below the buttons is better anyway!-->
+			<h3 id = "ratings" style = "text-align: center;">
+				
+			</h3>
+		
+			<!--<div class = "flex">
+				
+			</div>"-->
+		</div>
+	</body>
+</html>

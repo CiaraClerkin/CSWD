@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link href = "styles/main.css" rel = "stylesheet" type = "text/css">
+		
+		<script>
+			<!--When the send button is pressed, send() is called.!-->
+			function send() {
+				//https://stackoverflow.com/questions/11563638/how-do-i-get-the-value-of-text-input-field-using-javascript#:~:text=I%20would%20create%20a%20variable,input%20value%20to%20the%20string.&text=Save%20this%20answer.,-Show%20activity%20on
+				//https://www.tutorialspoint.com/how-to-add-a-new-element-to-html-dom-in-javascript
+				//https://stackoverflow.com/questions/9422974/createelement-with-id
+				
+				//creates a div with id "container"
+				let container = document.createElement("div");
+				container.setAttribute("class", "container");
+				
+				//
+				let name = document.createElement("p");
+				let question = document.createElement("p"); 
+				
+				let user = document.getElementById("name").value;
+				let message = document.getElementById("message").value;
+				
+				<!--had trouble getting this to work because I thought the text node wasn't necessary to do this method!-->
+				let userText = document.createTextNode("User: " + user);
+				let messageText = document.createTextNode(message);
+				
+				name.appendChild(userText);
+				question.appendChild(messageText);
+				
+				//document.getElementById("post").innerHTML = message;
+				//let post = document.getElementById("post");
+				//post.appendChild(tag);
+				document.getElementById("b").appendChild(container);
+				container.appendChild(name);
+				container.appendChild(question);
+				
+				alert("Thank you for your question / suggestion!");
+			}
+		</script>
+	</head>
+	
+	<body id = "b">
+		<nav>
+			<!--https://www.w3schools.com/tags/tag_nav.asp!-->
+            <ul>
+                <a href="page2.html"><strong>General</strong></a>
+                <a href="page3.html"><strong>Characters</strong></a>
+				<a href="index.html" style = "margin-top: -25%; padding-top: 90px; padding-bottom: 0px; padding-right: 15px;"><img src = "styles/images/logo.png" id = "logo"></a>
+                <a href="page4.html"><strong>Rate Us</strong></a>
+				<!-- was struggling to center these without making the last one wrap then I realised that it was because the last one still had a big margin right!-->
+				<a href="page5.html" style = "margin-right: 0px;"><strong>Questions</strong></a>
+				<!--<a href="index.html" style = "margin-top: -25%; padding-top: 90px; padding-bottom: 0px; padding-right: 15px;"><img src = "styles/images/logo.png" id = "logo"></a>!-->
+            </ul>
+        </nav>
+		
+		<!--Made by me!-->
+		<img src = "styles/images/note.png" id = "note">
+		
+		<a href="index.html" class = "arrow">&#11148;</a>
+		
+		<h1>Questions or Suggestions?</h1>
+		
+		<div class = "container" style = "padding-bottom: 10%;">
+			<h2>Ask a question or give us suggestions!</h2>
+			
+			<label for = "name" style = "margin-left: 4.2%;">Name: </label>
+			<input type = "text" id = "name"> 
+			</input>
+			<br><br>
+			<label for = "message">Message:</label>
+			<!--w3schools.com/tags/tag_textarea.asp#:~:text=Definition%20and%20Usage,width%20font%20(usually%20Courier).!-->
+			<textarea id = "message" cols = "75" rows = "20" style = "vertical-align: top;">
+			</textarea>
+			
+			<a onclick = "send()" id = "beta" style = "display: block; float: left; margin-top: 3%; margin-left: 14.05%;">Send</a>
+		</div>
+		
+		<!--!-->
+		<!--<div class = "container">
+			<div id = "post">
+			</div>
+		</div>!-->
+		
+		
+	</body>
+</html>

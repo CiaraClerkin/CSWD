@@ -1,0 +1,206 @@
+body {
+	background-image: url("images/bg.png");
+	background-size: 100% 150%;
+	margin: 0px;
+}
+
+#bar, .container{
+    background-color: rgb(231, 156, 19);
+    opacity: 0.9;
+}
+
+#bar {
+	/*top: 0px;
+	padding-top: 0px;
+	position: relative;
+	margin: 0px;*/
+	margin-top: -1.2%;
+}
+
+ul li {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    display: inline;
+}
+
+/* have to separate the buttons to centre them */
+
+#button1, #button2, #button7 {
+	margin-top: 6%;
+	display: inline-block;
+	margin-bottom: 6%;
+	width: 15%;
+}
+
+#button1 {
+	margin-left: 8%;
+	/*margin-right: 9%;*/
+}
+
+#button2 {
+	/* Thanks w3schools*/
+	margin-left: 20%;
+	/*margin-right: 10%;
+	/*background-color: rgba(211, 18, 112, 0.75);*/
+}
+
+#button7 {
+	margin-left: 20%;
+	margin-right: 50%;
+}
+
+#button3 {
+	/*background-color: rgba(211, 18, 112, 0.75);*/
+	display: inline-block;
+	width: 165px;
+	height: 165px;
+	/*margin-top: 0%;*/
+	margin-left: auto;
+	margin-right: auto;
+	/*filter: drop-shadow(2px 1px 0 black);*/
+	/*background-color: rgba(211, 18, 112, 0.75);*/
+	outline: solid white 4px;
+	/*outline-color: white;
+	outline-width: 4px;*/
+	opacity: 0.9;
+}
+
+#aimi {
+	margin-top: 10%;
+}
+
+#beta {
+	background-color: rgb(209, 30, 104);
+	color: white;
+	font-size: 28px;
+	font-family: arial;
+	text-decoration: none;
+	margin-right: 30%;
+	padding: 15px 15px;
+	float: right; 
+	margin-top: 10px;
+}
+
+a:hover {
+	filter: brightness(115%);
+	cursor: pointer;
+} 
+
+.arrow {
+	/*display: block; - I don't know why I had this piece of code here, it caused the arrows to have a hitbox that spanned across the whole screen horizontally. I was surprised how easy it was to fix*/
+	color: rgb(209, 30, 104);
+	font-size: 100px;
+	font-family: arial;
+	text-decoration: none;
+	margin: auto 0px;
+	margin-left: 5%;
+}
+
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5%;
+	width: 15%;
+}
+/*https://stackoverflow.com/questions/15782078/bring-element-to-front-using-css*/
+#note {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-left: 55%;
+	margin-top: -3%;
+	z-index: 1;
+	position: relative;
+	width: 10%;
+}
+
+.container {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	padding: 1%;
+}
+
+/*.rate:hover {
+	filter: brightness(115%);
+	cursor: pointer;
+	/*display: flex; 
+	flex-direction: row;*/
+}*/
+
+.flex {
+	display: flex;
+    flex-direction: row;
+	color: white;
+	font-size: 28px;
+	font-family: arial;
+	margin-top: -2.5%;
+}
+
+h1, h2, p {
+	color: white;
+	font-family: arial;
+	/*w3schools text shadow for plain border*/
+	text-shadow: -2.5px 0 rgb(209, 30, 104), 0 2.5px rgb(209, 30, 104), 2.5px 0 rgb(209, 30, 104), 0 -2.5px rgb(209, 30, 104);
+}
+
+p, figcaption {
+	text-shadow: -1.5px 0 rgb(209, 30, 104), 0 1.5px rgb(209, 30, 104), 1.5px 0 rgb(209, 30, 104), 0 -1.5px rgb(209, 30, 104);
+}
+
+p {
+	margin: 8px;
+}
+
+figcaption {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 58px;
+	text-align: center;
+	margin-top: 2.5%;
+}
+
+h2 {
+	font-size: 58px;
+}
+
+
+/*w3schools height auto*/
+.test {
+	/*margin-top: auto;*/
+	width: 300px;
+	height: 300px;
+	margin: auto;
+}
+
+.gif, .profile {
+	/*width: 164.09495549%;*/
+	width: 400px;
+	height: 400px;
+}
+
+.profile, .rate {
+	margin: 8px;
+	background-color: rgb(209, 30, 104);
+	outline: solid white 4px;
+	opacity: 0.9;
+}
+
+figcaption {
+	text-align: center;
+}
+/*ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    padding: 0 30px;
+    display: block;
+   
+
+}*/
